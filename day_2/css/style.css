@@ -1,3 +1,5 @@
 /* my first CSS */
 
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
