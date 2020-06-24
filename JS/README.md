@@ -70,6 +70,7 @@ Los enteros son la misma clase que un numero en punto flotante.
     console.log(`Mínimo valor en JS: ${Number.MIN_SAFE_INTEGER}`);
     ```
 ## Control Flow
+### **if - else**
 - Sólo una *condición* sera satisfecha. Es decir, o se ejecuta el *if*, o se ejecuta *else*.
 - Puede no existir un *else*. De esta forma, sólo se ejecutará el *if* si se cumple su condición, y después se seguirá ejecutando el resto del código.
     ``` javascript
@@ -98,7 +99,8 @@ utilizar el *triple igual*, `===`
     if (2+2 === 3) console.log(`math still works!`);
     else console.log(`panic?`);
     ```
-- **else if**
+### **else if**
+
     ``` javascript
     const friendsAtYourParty = 5;
     if (friendsAtYourParty === 0){
@@ -109,7 +111,9 @@ utilizar el *triple igual*, `===`
         console.log(`woooooo`);
     }
     ```
-- **while**
+
+### **while**
+
     ``` javascript
     let friendsAtYourParty = 0;
 
@@ -122,9 +126,36 @@ utilizar el *triple igual*, `===`
     let friendsInLoop = 0;
     while (friendsInLoop < 10){
     //console.log( friendsInLoop );
-    friendsInLoop = friendsInLoop + 1;
+    friendsInLoop = friendsInLoop + 1;    //Permite modificar el incremento
+    //friendsInLoop += 1;                   //permite modificar el incremento
+    //friendsInLoop =+ 1;                   //Esto no funciona
+    //friendsInLoop++;                      //incremento +1
+    //++friendsInLoop;                      //incremento +1, no utilizado
     console.log( friendsInLoop );
     }
     console.log(friendsInLoop);
     ```
 
+### **for**
+
+    ``` javascript 
+    let friendsInLoop = 0;
+    for (let i = 0; i < 10; i++){
+        console.log(i);
+        friendsInLoop++;
+    }
+    console.log(friendsInLoop);
+
+
+    const character = 'f';
+    const timesToRepeat = 15;
+    let myString = '';
+    /*while (myString < timesToRepeat){
+    myString = myString + character;
+    }*/
+    for(let i = 0; i < timesToRepeat; i++){
+    //myString = myString + character;
+    myString += character;
+    }
+    console.log(myString);
+    ```
