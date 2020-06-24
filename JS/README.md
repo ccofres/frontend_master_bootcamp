@@ -101,7 +101,7 @@ utilizar el *triple igual*, `===`
     ```
 ### **else if**
 
-    ``` javascript
+``` javascript
     const friendsAtYourParty = 5;
     if (friendsAtYourParty === 0){
         console.log(`cool, now i have all the nachos`);
@@ -110,11 +110,11 @@ utilizar el *triple igual*, `===`
     } else {
         console.log(`woooooo`);
     }
-    ```
+```
 
 ### **while**
 
-    ``` javascript
+``` javascript
     let friendsAtYourParty = 0;
 
     friendsAtYourParty = friendsAtYourParty + 1;
@@ -134,19 +134,20 @@ utilizar el *triple igual*, `===`
     console.log( friendsInLoop );
     }
     console.log(friendsInLoop);
-    ```
+```
 
 ### **for**
 
-    ``` javascript 
+``` javascript 
     let friendsInLoop = 0;
     for (let i = 0; i < 10; i++){
         console.log(i);
         friendsInLoop++;
     }
     console.log(friendsInLoop);
-
-
+```
+- Para repetir algún número determinado de veces una letra (string):
+``` javascript 
     const character = 'f';
     const timesToRepeat = 15;
     let myString = '';
@@ -158,4 +159,4 @@ utilizar el *triple igual*, `===`
     myString += character;
     }
     console.log(myString);
-    ```
+```

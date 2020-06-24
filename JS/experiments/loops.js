@@ -40,7 +40,7 @@ console.log(friendsInLoop);
 
 
 const character = 'f';
-const timesToRepeat = 15;
+const timesToRepeat = 3;
 let myString = '';
 /*while (myString < timesToRepeat){
   myString = myString + character;
