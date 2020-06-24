@@ -1,7 +1,7 @@
 
-# JS Short Cut en español
+# JS Short Cut en español :cowboy_hat_face: :chile:
 - La concatenación en JS se prefiere de tipo *camel casing*, aunque la concatenación *snake casing* tambien sirve...
-    ```
+    ``` javascript
     monthlyRent     //camel casing
     monthly_rent    //snake casing
     ```
@@ -31,18 +31,18 @@
 - La ejecución de código en JS es secuencial, es decir, el código en la linea 2 se ejecuta antes que el de la línea 3. Esto es debido a que JS sólo tiene **un hilo de ejecución**.
 - Estas dos formas son equivalente. En **(2)**, se utiliza la forma **template string**
 que es la forma más conveniente de hacerlo. Característica agregada con ES2015/ES6.
-    ``` 
+    ``` javascript
     1.- const sentence = "Hello " + firstName+" "+ lastName + " How are you??";
     2.- const sentence = `Hello ${firstName} ${lastName} How are you??`;                //template string format
     ```
 - Al momento de definir una varible como `true` o `false`, se vuelve automáticamente
 de tipo **boolean**:
-    ```
+    ``` javascript
     const isTheSkyBlue = true; // variable booleana
     ```
 - JavaScript es un lenguaje de tipo dinámico, es decir, una variable definida previamente
 puede cambiar de tipo `string` a tipo `boolean` sin ningún problema en su ejecución.
-    ```
+    ``` javascript
     let myName = `Cristian`;        // string
     console.log(myName);    
     myName = 15;                    // numero
@@ -57,7 +57,7 @@ Los enteros son la misma clase que un numero en punto flotante.
     - `Number.MAX_SAFE_INTEGER` es el máximo valor para el cual el cálculo puede hacerse.
     - `Number.MIN_SAFE_INTEGER` es el mínimo valor para el cual JS cálcula algo.
         - Más allá de estos valores no se garantiza su (coherencia??)
-    ```
+    ``` javascript
     const num = 5;
     console.log(num);
     const num2 = 5.0000001;
@@ -72,34 +72,34 @@ Los enteros son la misma clase que un numero en punto flotante.
 ## Control Flow
 - Sólo una *condición* sera satisfecha. Es decir, o se ejecuta el *if*, o se ejecuta *else*.
 - Puede no existir un *else*. De esta forma, sólo se ejecutará el *if* si se cumple su condición, y después se seguirá ejecutando el resto del código.
-```
-const isSkyBlue = false;
-if (isSkyBlue){
-    console.log(`the sky is blue!`);
-    console.log(`anything`);
-    
-} else {
-    console.log(`the sky is not blue ??`);
-}
+    ``` javascript
+    const isSkyBlue = false;
+    if (isSkyBlue){
+        console.log(`the sky is blue!`);
+        console.log(`anything`);
+        
+    } else {
+        console.log(`the sky is not blue ??`);
+    }
 
-let greeting;
-if (isSkyBlue){
-    greeting = 'it must be nice weather';
-} 
-else {
-    greeting = 'it must be bad weather';
-} console.log(greeting);
-```
+    let greeting;
+    if (isSkyBlue){
+        greeting = 'it must be nice weather';
+    } 
+    else {
+        greeting = 'it must be bad weather';
+    } console.log(greeting);
+    ```
 
--  En JS cuando se quiere asignar un valor a una variable, se utiliza `=`
+- En JS cuando se quiere asignar un valor a una variable, se utiliza `=`
 - Si lo que se quiere es "preguntar" si cierta variable toma cierto valor, se
 utilizar el *triple igual*, `===`
-    ```
+    ``` javascript
     if (2+2 === 3) console.log(`math still works!`);
     else console.log(`panic?`);
     ```
 - **else if**
-    ```
+    ``` javascript
     const friendsAtYourParty = 5;
     if (friendsAtYourParty === 0){
         console.log(`cool, now i have all the nachos`);
@@ -110,7 +110,7 @@ utilizar el *triple igual*, `===`
     }
     ```
 - **while**
-    ```
+    ``` javascript
     let friendsAtYourParty = 0;
 
     friendsAtYourParty = friendsAtYourParty + 1;
@@ -126,6 +126,5 @@ utilizar el *triple igual*, `===`
     console.log( friendsInLoop );
     }
     console.log(friendsInLoop);
-
     ```
 
