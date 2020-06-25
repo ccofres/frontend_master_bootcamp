@@ -160,3 +160,54 @@ utilizar el *triple igual*, `===`
     }
     console.log(myString);
 ```
+## Functions
+- A veces llamadas *métodos*, *procedimientos*... no son exactamente lo mismo, pero en la práctica funcionan casi igual.
+- Se definen de la siguiente forma básica en JS:
+    ``` javascript
+    function name(params) {
+        //
+    }
+    ```
+    - En donde *name* es el nombre de la funcion, y *params* los parámetros recibidos por esta.
+
+- Funciona que toma un número, y retorna el número + 2.
+``` javascript
+function addTwo(number) {
+    return number + 2;
+}
+
+const finalAnswer = addTwo(5);
+const finalAnswer2 = addTwo(10);
+console.log(finalAnswer);
+console.log(finalAnswer2);
+```
+
+- Función vacía, que torna 5 cuando la llaman.
+
+``` javascript
+function giveFiveBack() {
+    return 5;
+}
+console.log(giveFiveBack() );
+```
+- Retorna la suma de dos números.
+``` javascript
+function add(num1,num2) {
+    return num1 + num2;
+}
+const finalAnswer3 = add(5,10);
+console.log(add(2,3));          //llamado desde console.log
+console.log(finalAnswer3 );
+```
+- Las funciones no tienen  por qué tener un **return**. 
+Es decir, pueden haber funciones que no retornen nada:
+``` javascript
+const myHomeCity = "Temuco";
+const myHomeState = "Araucanía";
+const myHomeCountry = "Chile";
+
+function logOutYourHome(city,state,country) {
+    console.log(`You are from ${city}, ${state} ${country}.`);
+}
+logOutYourHome(myHomeCity,myHomeState,myHomeCountry);
+```
