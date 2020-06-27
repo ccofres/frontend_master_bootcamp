@@ -1,5 +1,8 @@
 
 # JS Short Cut en español :cowboy_hat_face: :chile:
+
+## Se recomienda el uso de VSCode, con la extension Live Server.
+
 - La concatenación en JS se prefiere de tipo *camel casing*, aunque la concatenación *snake casing* tambien sirve...
     ``` javascript
     monthlyRent     //camel casing
