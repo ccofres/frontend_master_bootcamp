@@ -1,5 +1,47 @@
 /* my first CSS */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Fira Code', consolas, sans-serif;
+    background: lightblue url(http://place-puppy.com/200x200) no-repeat left top;
+    height: 300px;
+}
+
+img {
+    border: 8px solid green;
+}
+
+h1 {
+    border: 5px dotted red
+}
+
+h2 {
+    color: teal;
+    border: 5px dashed blue ;
+}
+p {
+    font-style: italic;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    background: lightblue url(http://place-puppy.com/200x200) left top;
+}
+cite {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.warning {
+    color: darkviolet;
+    font-weight: bolder;
+    font-family: 'Fira Code';
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.bigbold{
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: skyblue;
 }
