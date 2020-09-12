@@ -1,0 +1,36 @@
+body {
+  font-family: Consolas, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  border: 0px solid red;
+}
+
+nav ul {
+  list-style-type: none;
+  border: 0px dotted blue;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li {
+  border: 3px solid yellow;
+  width: 7rem;
+  background-color: red;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+nav a {
+  border: 3px dotted white;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 1rem;
+}
+nav a:hover {
+  background-color: white;
+  color: red;
+}

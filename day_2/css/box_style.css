@@ -1,0 +1,37 @@
+body {
+  background-color: cadetblue;
+}
+
+div {
+  border: 5px blue solid;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: lightblue;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.box1 {
+  border-color: orange;
+  background-color: #ffcc00;
+  width: 25%;
+}
+
+.box2 p {
+  border: 1px solid green ;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+h1 {
+  margin: 0rem;
+}
+
+a {
+  border: 0.2rem solid green;
+}
+
+.box3 {
+  background-image: url(http://place-puppy.com/200x100);
+  height: 200px;
+  width: 100px;
+}

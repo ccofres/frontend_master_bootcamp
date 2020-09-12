@@ -1,0 +1,16 @@
+body {
+  background-color: saddlebrown;
+}
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+li { 
+  border: 3px solid blue;
+  flex-basis: 10%;
+} 
