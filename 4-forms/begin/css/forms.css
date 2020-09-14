@@ -7,14 +7,19 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
-	padding: 0;
+  padding: 0;
+  background-image: url(../img/galaxy.jpg);
+}
+h2, h3, legend {
+  font-family: 'Architects Daughter', cursive;
 }
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
 	padding: 1em;
 	display: flex;
-	flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  background-color: #efb106;
 }
 p {
 	margin-bottom: 0;
@@ -27,11 +32,56 @@ section {
 aside {
 	flex-basis: 33%;
 }
-
-
-
-
-
+fieldset {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+legend {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top:  1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+label {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+textarea {
+  height: 10rem;
+  width: 40rem;
+  padding: 1rem;
+}
+select {
+  font-size: 1rem;
+}
+button {
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #bb342f;
+  color: cornsilk;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 1rem;
+}
+button:hover {
+  background-color: cornsilk;
+  color: #bb342f;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+  display: block;
+  margin: 0rem;
+  width: 20rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: none;
+}
 
 
 

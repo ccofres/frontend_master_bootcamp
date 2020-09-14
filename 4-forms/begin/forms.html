@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Alien Abduction Order Form</title>
+  <title>Alien Abduction Order Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 	<link href="css/forms.css" rel="stylesheet">
 </head>
 <body>
@@ -14,19 +15,19 @@
     <input type="hidden" name="send_to" value="cristian.cofre.s@mail.pucv.cl">
       <fieldset>
         <legend>Your contact information</legend>
-			  <label for="name"> <p>Your name </label> 
+			  <label for="name"> Your name </label> 
           <input type="text" name="name" id="name">
         <label for="phone">  Phone number </label>
           <input type="tel" name="phone" id="phone" placeholder="Don't forget your area code!">
-        <label for="email">  <p> Email </label>
+        <label for="email">  Email </label>
           <input type="email" name="email" id="email">
       </fieldset>
 
       <fieldset>
         <legend> About your abduction </legend>
-        <label for="date"><p>Requested  date</label>
+        <label for="date"> Requested  date </label>
           <input type="date" name="date" id="date">
-        <label for="qty"><p>How many people would you like abducted?</label>
+        <label for="qty"> How many people would you like abducted? </label>
           <input type="number" name="qty" id="qty" min="1" max="10">
 
 
@@ -57,7 +58,7 @@
         <label for="comments">
           <p>Special requests:</p>
         </label>
-        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Tell me everything you want..."></textarea>
+        <textarea name="comments" id="comments" placeholder="Tell me everything you want..."></textarea>
         
         <label for="subscribe">
           <input type="checkbox" value="subscribe" name="subscribe" id="subscribe" 
@@ -73,7 +74,10 @@
 
 
 		<aside>
-			<h3>Our Location</h3>
+      <h3>Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.034452609751!2d-72.4395786851178!3d-38.53297397962844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDMxJzU4LjciUyA3MsKwMjYnMTQuNiJX!5e0!3m2!1ses-419!2scl!4v1600054796510!5m2!1ses-419!2scl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      
+      <iframe src="https://colab.research.google.com/notebooks/forms.ipynb" width="500" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			<address>
 				Frontend Masters &middot;
 				60 South 6th Street &middot;
@@ -82,6 +86,9 @@
 			</address>
 		</aside>
   </div>
+
+
+
   <script src="js/forms.js"></script>
 </body>
 </html>
