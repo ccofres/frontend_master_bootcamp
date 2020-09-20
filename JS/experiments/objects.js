@@ -1,5 +1,5 @@
-/**
 
+/*
 const person = {
     name: `Cristian Cofre`,         //name es una key
     city: `The city of cold`,                //las key deben ser unicas
@@ -12,7 +12,8 @@ const person = {
 //console.log(person);
 console.log(person.city);
 console.log(person.name);
-
+*/
+/*
 const person1 = {
     name: `Cristian`,
     ageRange: `25-35`
@@ -21,6 +22,8 @@ const person2 = {
     name: `Baco`,
     ageRange: `0-5`
 };
+*/
+/*
 function suggestMusic(person) {
     if (person.ageRange === "25-35"){
       console.log("We think you'll like Daft Punk you crazy millenial.");
@@ -35,7 +38,8 @@ function suggestMusic(person) {
 suggestMusic(person1);
 suggestMusic(person2);
 suggestMusic(person);
-
+*/
+/*
 const dog = {
   name: "dog",
   speak() {                     // METODO
@@ -43,7 +47,7 @@ const dog = {
   }
 };
 dog.speak();
-
+*/
 
 const me = {
   name: {
@@ -54,7 +58,7 @@ const me = {
       anotherPollos: "Arrrggghh, by pollos"
     },
     logMeOut(){
-      console.log(this);
+      con sole.log(this);
     }
   },
   location:{

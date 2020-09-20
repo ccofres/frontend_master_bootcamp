@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The DOM</title>
+</head>
+<body>
+  <!--
+  <style>
+    .red-square {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+    }
+  </style>
+  
+  <div class="red-square"></div>
+  
+  <script>
+    const redSquare = document.querySelector('.red-square');
+    redSquare.style.backgroundColor = 'limegreen';
+  </script> 
+  -->
+  <input placeholder="type to me" class="input-to-copy">
+  <p class="p-to-copy-to">Nothing has happened yet.</p>
+
+  <script>
+    const input = document.querySelector('.input-to-copy');
+    const paragraph = document.querySelector('.p-to-copy-to');
+
+    input.addEventListener(
+      "keyup", function(){
+        paragraph.innerText = input.value;
+      }
+    );
+  </script>
+
+<input placeholder="type to me 2" class="input-to-copy2">
+<p class="p-to-copy-to2">Nothing has happened yet 2.</p>
+
+<script>
+  //const input = document.querySelector('.input-to-copy2');
+  const paragraph2 = document.querySelector('.p-to-copy-to2');
+
+  document.querySelector('.input-to-copy2').addEventListener("keyup", function(event){
+    //console.log('event')
+    paragraph2.innerText = event.target.value;
+    });
+</script>
+
+<style>
+  .color-box {
+    background-color: limegreen;
+    width: 100px;
+    height: 100px;
+  }
+</style>
+<div class="color-box"></div>
+<input class="color-input" placeholder="Type a color here!" >
+<script>
+  const inputColor = document.querySelector('.color-input');
+  const paragraphColor = document.querySelector('.color-box');
+  inputColor.addEventListener("change", function(){
+    paragraphColor.style.backgroundColor = inputColor.value;
+  });
+
+</script>
+
+<div  class="button-container">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+<script>
+  document.querySelector('.button-container').addEventListener('click', function(event){
+    if(event.target.tagName === 'BUTTON'){
+    alert(`You clicked on button ${event.target.innerText}`);
+    event.currentTarget.style.backgroundColor = 'orange';
+    }
+  })
+</script>
+
+</body>
+</html>
