@@ -14,12 +14,11 @@ function addDoggo() {
 
       document.querySelector(".doggos").appendChild(img);
     });
-  }
+}
 
-  document.querySelector(".add-doggo").addEventListener("click", addDoggo);
-  */
+document.querySelector(".add-doggo").addEventListener("click", addDoggo);
+*/
 
-//init();
 const BREED_URL = "https://dog.ceo/api/breeds/list/all";
 const select = document.querySelector(".breeds");
 
@@ -50,12 +49,7 @@ select.addEventListener("change", function (event) {
 });
 
 const img = document.querySelector(".dog-img");
-const spinner = document.querySelector(".spinner");
-
 function getNewDoggo(url) {
-  spinner.classList.add("show");
-  //img.classList.remove("show");
-  img.style.display = "none";
   //esta es la parte asincrona de AJAX
   fetch(url)
     .then(function (response) {
@@ -63,17 +57,9 @@ function getNewDoggo(url) {
     })
     .then(function (data) {
       img.src = data.message;
-      img.addEventListener("load", loadImg);
     });
 }
 
-function loadImg() {
-  spinner.classList.remove("show");
-  //img.classList.add("show");
-  img.style.display = "block";
-}
-
-/*
 function init() {
   const breedUrl =
     "https://dog.ceo/api/breed/australian/shepherd/images/random";
@@ -88,4 +74,5 @@ function init() {
       document.querySelector(".dog-img").appendChild(img);
     });
 }
-*/
+
+init();

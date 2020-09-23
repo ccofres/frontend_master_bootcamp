@@ -1,0 +1,20 @@
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.spinner {
+  font-size: 50px;
+  text-align: center;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+.gog-img {
+  display: none;
+}
+
+.show {
+  display: block;
+}

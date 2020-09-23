@@ -10,7 +10,8 @@ ul {
   justify-content: space-around;
 }
 
-li { 
+li {
   border: 3px solid blue;
   flex-basis: 10%;
-} 
+  text-align: center;
+}
